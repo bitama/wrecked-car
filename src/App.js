@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Wrecked from './components/Wrecked'
+import Car from  './components/Car'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App text-primary">
+      <Wrecked>
+        <Car carName="JS Destroyer" color="limegreen"/>
+        <Car carName="JSx-Ray"  color="aqua"/>
+        <Car carName="fully wrecked"  color="white"/>
+      </Wrecked>
+      
+      
     </div>
   );
 }
